@@ -1,0 +1,27 @@
+.App {
+  background-color: aliceblue;
+  min-width: 100vw;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 50px;
+}
+
+.columnContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.rowContainer {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.teamsContainer {
+  flex-grow: 1;
+  margin-right: 50px;
+}
+
+.membersContainer {
+  flex-grow: 4;
+}
