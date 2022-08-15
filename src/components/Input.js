@@ -1,9 +1,13 @@
 import React from 'react'
 import styles from '../styles/Input.module.css'
 
-function Input(props) {
+function Input({ children, label, radioLabel, ...rest}) {
   return (
-    <input className={styles.input} {...props} />
+    <>
+      <label>{label}</label>
+      <input className={rest.type === 'text' ? styles.input : ''} {...rest} />
+      <label>{radioLabel}</label>
+    </>
   )
 }
 
