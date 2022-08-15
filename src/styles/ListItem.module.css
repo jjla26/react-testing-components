@@ -1,3 +1,14 @@
 .listItem {
+  font-size: medium;
+  list-style-type: none;
+  margin: 10px;
+}
+
+.selected {
+  margin-left: 20px;
   font-size: large;
+}
+
+.pointer:hover {
+  cursor: pointer;
 }
