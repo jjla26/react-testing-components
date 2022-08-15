@@ -1,9 +1,9 @@
 import React from 'react'
 import ListItem from './ListItem'
 
-const RemovableListItem = ({ onRemoveCallback, ...rest }) => {
+const RemovableListItem = ({ onRemoveCallback, children, ...rest }) => {
   return <div style={{ display: 'flex', alignItems: 'center'}}>
-    <ListItem {...rest} />
+    <ListItem {...rest}>{children}</ListItem>
     <span onClick={() => onRemoveCallback(rest.item)}>X</span>
   </div>
 }
