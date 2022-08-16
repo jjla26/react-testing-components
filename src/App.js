@@ -36,9 +36,9 @@ function App() {
     e.preventDefault()
     if(validate()){
       if (mode === 'member'){
-        setMembers([...members, {id: members.length, name: value, team: selectedTeamId }])
+        setMembers([...members, {id: Math.random().toString(36), name: value, team: selectedTeamId }])
       }else {
-        setTeams([...teams, {id: teams.length, name: value }])
+        setTeams([...teams, {id: Math.random().toString(36), name: value }])
       }
       setValue('')
     }
