@@ -1,5 +1,5 @@
 .button {
-  min-width: 400px;
+  min-width: 30px;
   min-height: 40px;
   color: white;
   font-size: medium;
@@ -7,6 +7,7 @@
   background-color: cornflowerblue;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .button:hover {
