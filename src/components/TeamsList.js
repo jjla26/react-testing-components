@@ -10,10 +10,9 @@ const TeamsList = ({ teams, handleSelectCallback }) => {
           key={team.id}
           item={team.name}
           selected={team.selected}
-          onClickCallback={handleSelectCallback}
           pointer
       >
-        {team.name}
+        <p onClick={() => handleSelectCallback && handleSelectCallback(team.name)}>{team.name}</p>
       </ListItem>)}
     </List>
   )

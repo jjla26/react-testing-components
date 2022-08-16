@@ -2,7 +2,7 @@ import React from 'react'
 import List from './List'
 import RemovableListItem from './RemovableListItem'
 
-const MembersList = ({ members, selectedTeamId, onRemoveCallback }) => {
+const MembersList = ({ members, selectedTeamId, onRemoveCallback, handleSelectCallback }) => {
   return (
     <List>
       {members.filter(member => member.team === selectedTeamId).map(member =>
@@ -11,7 +11,7 @@ const MembersList = ({ members, selectedTeamId, onRemoveCallback }) => {
           item={member.name}
           onRemoveCallback={onRemoveCallback}
         >
-          {member.name}
+          <p onClick={() => handleSelectCallback && handleSelectCallback(member.name)}>{member.name}</p>
         </RemovableListItem>)}
     </List>
   )
