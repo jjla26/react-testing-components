@@ -12,7 +12,7 @@ const TeamsList = ({ teams, handleSelectCallback }) => {
           selected={team.selected}
           pointer
       >
-        <p onClick={() => handleSelectCallback && handleSelectCallback(team.name)}>{team.name}</p>
+        <p onClick={() => handleSelectCallback(team.name)}>{team.name}</p>
       </ListItem>)}
     </List>
   )
