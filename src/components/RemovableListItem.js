@@ -1,10 +1,11 @@
 import React from 'react'
+import Button from './Button'
 import ListItem from './ListItem'
 
 const RemovableListItem = ({ onRemoveCallback, children, ...rest }) => {
-  return <div style={{ display: 'flex', alignItems: 'center'}}>
+  return <div style={{ display: 'flex', alignItems: 'center' }}>
     <ListItem {...rest}>{children}</ListItem>
-    <span onClick={() => onRemoveCallback(rest.item)}>X</span>
+    <Button onClick={() => onRemoveCallback(rest.item)} name='X' />
   </div>
 }
 

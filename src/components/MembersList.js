@@ -11,7 +11,7 @@ const MembersList = ({ members, selectedTeamId, onRemoveCallback }) => {
           item={member.name}
           onRemoveCallback={onRemoveCallback}
         >
-          {member.name}
+          <p>{member.name}</p>
         </RemovableListItem>)}
     </List>
   )
